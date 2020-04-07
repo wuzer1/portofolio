@@ -8,6 +8,12 @@ html, body{
 html{
     scroll-behavior: smooth;
 }
+/* .container-nav{
+    width: 1440px;
+    max-width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+} */
 #navbar{
     display: flex;
     justify-content: flex-end;
@@ -97,6 +103,7 @@ html{
     padding-bottom: 10px;
     width: 900px;
     max-width: 100%;
+    text-shadow: 0px 5px 4px rgba(152, 150, 150, 0.44);
 }
 .container-grid{
     display: grid;
@@ -256,36 +263,49 @@ footer a{
     }
 }
 @media screen and (max-width:600px){
+    #navbar{
+        justify-content: center;
+    }
+    #welcome-section h1{
+        font-size: 3em;
+    }
+    #welcome-section span{
+        font-size: 36px;
+    }
     #projects{
         padding: 30px 0;
     }
     #projects h2{
         font-size: 2em;
-        max-width: 500px;
+        max-width: 90%;
         border: none;
         position: relative;
+        justify-content: center;
     }
     #projects h2::after{
         content: "";
         width: 440px;
-        max-width: 100%;
+        max-width: 95%;
         height: 3px;
         background-color: #fff;
         position: absolute;
         display: block;
-        left: 20px;
-        right: 20px;
-        top: 90%;
+        left: 10px;
+        right: 10px;
+        top: 95%;
         margin: auto;
     }
     .project{
         max-width: 500px;
         margin: auto;
     }
+    .project-tile img{
+        height: auto;
+    }
     .container-grid{
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-        padding: 0 30px;
-        margin: 50px auto;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        /* padding: 0 30px; */
+        margin: 20px;
     }
     #contact h2{
         font-size: 3em;
