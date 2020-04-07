@@ -299,6 +299,9 @@ footer a{
         max-width: 500px;
         margin: auto;
     }
+    .project-title{
+        font-size: 1.5em;
+    }
     .project-tile img{
         height: auto;
     }
